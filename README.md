@@ -98,21 +98,6 @@ Repeat for every node.
 Now create myEthPoa/accounts.txt save the public addresses in it.
 
 
-You should have this tree
-
-myEthPoa
-     accounts.txt
-     node1
-          keystore //Inside keystore you find the json file with the private key
-          password.txt
-     node2
-          keystore //Inside keystore you find the json file with the private key
-          password.txt
-     node3
-          keystore //Inside keystore you find the json file with the private key
-          password.txt
-
-
 ###  2]  Create a genesis file
 We are going to create the genesis file with puppeth. We need the genesis to initialize the blockchain. the genesis is the first block of the chain.
 
