@@ -99,18 +99,18 @@ Now create myEthPoa/accounts.txt save the public addresses in it.
 
 
 You should have this tree
-.
-├── accounts.txt
-├── node1
-│   ├── keystore //Inside keystore you find the json file with the private key
-│   └── password.txt
-├── node2
-│    ├── keystore
-│    └── password.txt
-└── node3
-     ├── keystore
-     └── password.txt    
 
+myEthPoa
+     accounts.txt
+     node1
+          keystore //Inside keystore you find the json file with the private key
+          password.txt
+     node2
+          keystore //Inside keystore you find the json file with the private key
+          password.txt
+     node3
+          keystore //Inside keystore you find the json file with the private key
+          password.txt
 
 
 ###  2]  Create a genesis file
