@@ -7,6 +7,11 @@
 ## Getting Started
 
 These instructions will allow you to connect to an ethereum private Proof Of Authority network. 
+If you clone this repo you have the pre-inizializated blockchain in /myEthPoa and you can directly go to the "Run" module.
+
+
+
+
 
 ## Pre-requisites
 * If you are in Windows install Ubuntu WSL from <https://ubuntu.com/wsl>
