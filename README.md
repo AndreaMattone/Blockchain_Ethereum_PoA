@@ -215,6 +215,44 @@ This create boot.key that contains an enode value that identifies the bootnode.
 
 ## Run
 
+###  5]  Start the bootnode service
+
+In a Ubuntu wls terminal start the bootnode
+```sh
+myEthPoa$> bootnode -nodekey boot.key -verbosity 9
+```
+
+###  6]  Start the nodes
+
+In a different Ubuntu wls terminal start the nodes (may be necessary run sudo before the command).
+
+Node1
+```sh
+geth --identity 'node' --allow-insecure-unlock -unlock 0x146dCA62D5353bB20C116E3F8A14A4f975C3A173 --password node1/password.txt --datadir node1/ --syncmode 'full' --port 30311 --rpc --rpcaddr 127.0.0.1 --rpcport 8501 --rpccorsdomain "*" --rpcapi 'personal,db,eth,net,web3,txpool,miner,clique' --bootnodes 'enode://4eea9d83df5f8a674367d6efd7643c170c7821658d244445515144ea07bd39b9c7ad45dffdbf1966ec3e2954e0d6a9ce2376c1a9e6e5d9c0bbd14e52573035a6@127.0.0.1:0?discport=30301' --networkid 1555 --ipcpath "./node1/geth.ipc"
+```
+
+Node2
+```sh
+geth --identity 'node' --allow-insecure-unlock -unlock 0xd087cCDB19b917bbb5880a623675CBde4308B124 --password node2/password.txt --datadir node2/ --syncmode 'full' --port 30312 --rpc --rpcaddr 127.0.0.1 --rpcport 8502 --rpccorsdomain "*" --rpcapi 'personal,db,eth,net,web3,txpool,miner,clique' --bootnodes 'enode://4eea9d83df5f8a674367d6efd7643c170c7821658d244445515144ea07bd39b9c7ad45dffdbf1966ec3e2954e0d6a9ce2376c1a9e6e5d9c0bbd14e52573035a6@127.0.0.1:0?discport=30301' --networkid 1555 --ipcpath "./node2/geth.ipc"
+```
+
+Node3
+```sh
+geth --identity 'node' --allow-insecure-unlock -unlock 0xe1Cd1937470F2598DED3CF4AFF49880A5709Da01 --password node3/password.txt --datadir node3/ --syncmode 'full' --port 30313 --rpc --rpcaddr 127.0.0.1 --rpcport 8503 --rpccorsdomain "*" --rpcapi 'personal,db,eth,net,web3,txpool,miner,clique' --bootnodes 'enode://4eea9d83df5f8a674367d6efd7643c170c7821658d244445515144ea07bd39b9c7ad45dffdbf1966ec3e2954e0d6a9ce2376c1a9e6e5d9c0bbd14e52573035a6@127.0.0.1:0?discport=30301' --networkid 1555 --ipcpath "./node3/geth.ipc"
+```
+
+Now your chain is online!
+
+
+## Interact with nodes
+###  7]  Interact with the nodes using clique
+
+Open a new Ubuntu WLS terminal and enter the blockchian folder and run (may be necessary to use sudo)
+```sh
+myEthPoa$> cd node1 
+myEthPoa$> geth attach geth.ipc
+```
+
 
 
 
