@@ -7,7 +7,7 @@
 ## Getting Started
 
 These instructions will allow you to connect to an ethereum private Proof Of Authority network. 
-If you clone this repo you have the pre-inizializated blockchain in /myEthPoa and you can directly go to the "Run" module.
+If you clone this repo you have the pre-inizializated blockchain (with Node1 and Node2 Sealers and Node3 not a Sealer) in /myEthPoa and you can directly go to the "Run" module.
 
 
 
@@ -73,7 +73,7 @@ For every node (in this case for node1)
 myEthPoa$> geth --datadir node1/ account new
 ```
 
-Impostiamo una password per il nodo 
+Let's set a password for the node
 ```sh
 myEthPoa$> 
 INFO [05-11|13:39:34.555] Maximum peer count ETH=50 LES=0 total=50
@@ -134,6 +134,7 @@ How many seconds should blocks take? (default = 15)
 ```
 
 Now we are going to set the accounts that are able to Seal, the Sealer accounts.
+In this example Node1 and Node2 are Sealers, Node3 is not.
 
 ```sh
 Which accounts are allowed to seal? (mandatory at least one)
