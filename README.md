@@ -6,7 +6,7 @@
 
 ## Getting Started
 
-These instructions will allow you to connect to an ethereum private Proof Of Authority network. 
+These instructions will allow you to connect to an ethereum private Proof Of Authority network. <https://hackernoon.com/setup-your-own-private-proof-of-authority-ethereum-network-with-geth-9a0a3750cda8>
 If you clone this repo you have the pre-inizializated blockchain (with Node1 and Node2 Sealers and Node3 not a Sealer) in /myEthPoa and you can directly go to the "Run" module.
 
 
