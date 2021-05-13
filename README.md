@@ -240,9 +240,9 @@ Node2
 geth --identity 'node' --allow-insecure-unlock --mine -unlock 0xd087cCDB19b917bbb5880a623675CBde4308B124 --password node2/password.txt --datadir node2/ --syncmode 'full' --port 30312 --rpc --rpcaddr 127.0.0.1 --rpcport 8502 --rpccorsdomain "*" --rpcapi 'personal,db,eth,net,web3,txpool,miner,clique' --bootnodes 'enode://4eea9d83df5f8a674367d6efd7643c170c7821658d244445515144ea07bd39b9c7ad45dffdbf1966ec3e2954e0d6a9ce2376c1a9e6e5d9c0bbd14e52573035a6@127.0.0.1:0?discport=30301' --networkid 1555 --ipcpath "./node2/geth.ipc"
 ```
 
-Node3
+Node3 (NB no --mine because is not a Signer)
 ```sh
-geth --identity 'node' --allow-insecure-unlock --mine -unlock 0xe1Cd1937470F2598DED3CF4AFF49880A5709Da01 --password node3/password.txt --datadir node3/ --syncmode 'full' --port 30313 --rpc --rpcaddr 127.0.0.1 --rpcport 8503 --rpccorsdomain "*" --rpcapi 'personal,db,eth,net,web3,txpool,miner,clique' --bootnodes 'enode://4eea9d83df5f8a674367d6efd7643c170c7821658d244445515144ea07bd39b9c7ad45dffdbf1966ec3e2954e0d6a9ce2376c1a9e6e5d9c0bbd14e52573035a6@127.0.0.1:0?discport=30301' --networkid 1555 --ipcpath "./node3/geth.ipc"
+geth --identity 'node' --allow-insecure-unlock -unlock 0xe1Cd1937470F2598DED3CF4AFF49880A5709Da01 --password node3/password.txt --datadir node3/ --syncmode 'full' --port 30313 --rpc --rpcaddr 127.0.0.1 --rpcport 8503 --rpccorsdomain "*" --rpcapi 'personal,db,eth,net,web3,txpool,miner,clique' --bootnodes 'enode://4eea9d83df5f8a674367d6efd7643c170c7821658d244445515144ea07bd39b9c7ad45dffdbf1966ec3e2954e0d6a9ce2376c1a9e6e5d9c0bbd14e52573035a6@127.0.0.1:0?discport=30301' --networkid 1555 --ipcpath "./node3/geth.ipc"
 ```
 
 Now your chain is online!
