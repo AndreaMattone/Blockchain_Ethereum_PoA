@@ -217,6 +217,19 @@ myEthPoa$> bootnode -nodekey boot.key -verbosity 9
 
 In a different Ubuntu wls terminal start the nodes (may be necessary run sudo before the command).
 
+* identity: node name
+* datadir: directory where the blockchain is stored
+* syncmode: value that indicates the sinc option of the block (fast, full, light)
+* port: listening port of the network
+* rpc: start the http JSON-RPC interface
+* rpcaddr: listening interface of the http-RPC server
+* rpcport: listening port of the http-RPC server
+* rpccorsdomain: list of the domains from where requests are accepted 
+* rpcapi: list of API offered by http-RPC interface
+* boonode: enode of the bootnode
+* networkid: identifier of th network
+* ipcpath path where you want to store the geth.ipc file (to attach)
+
 Node1
 ```sh
 geth --identity 'node' --allow-insecure-unlock --mine -unlock 0x146dCA62D5353bB20C116E3F8A14A4f975C3A173 --password node1/password.txt --datadir node1/ --syncmode 'full' --port 30311 --rpc --rpcaddr 127.0.0.1 --rpcport 8501 --rpccorsdomain "*" --rpcapi 'personal,db,eth,net,web3,txpool,miner,clique' --bootnodes 'enode://4eea9d83df5f8a674367d6efd7643c170c7821658d244445515144ea07bd39b9c7ad45dffdbf1966ec3e2954e0d6a9ce2376c1a9e6e5d9c0bbd14e52573035a6@127.0.0.1:0?discport=30301' --networkid 1555 --ipcpath "./node1/geth.ipc"
