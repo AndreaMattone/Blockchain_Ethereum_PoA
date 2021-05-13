@@ -1,0 +1,43 @@
+=============== May 13, 2021 (CEST) ===============
+11:29:36.378258 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:29:36.383527 db@open opening
+11:29:36.385720 version@stat F·[] S·0B[] Sc·[]
+11:29:36.386440 db@janitor F·2 G·0
+11:29:36.386440 db@open done T·2.9123ms
+11:29:36.400339 db@close closing
+11:29:36.400852 db@close done T·513.1µs
+=============== May 13, 2021 (CEST) ===============
+11:31:42.577792 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:31:42.578829 version@stat F·[] S·0B[] Sc·[]
+11:31:42.578829 db@open opening
+11:31:42.578829 journal@recovery F·1
+11:31:42.631165 journal@recovery recovering @1
+11:31:42.631165 memdb@flush created L0@2 N·624 S·50KiB "\x02d\xfc..\x19Ba,v430":"\xfe\x88\xcf..H\xef\xcc,v363"
+11:31:42.631165 version@stat F·[1] S·50KiB[50KiB] Sc·[0.25]
+11:31:42.653131 db@janitor F·3 G·0
+11:31:42.653688 db@open done T·74.8594ms
+11:31:42.764851 memdb@flush N·7 S·464B
+11:31:42.774928 memdb@flush created L0@6 N·7 S·609B "Dat..ion,v626":"unc..own,v632"
+11:31:42.774928 version@stat F·[2] S·50KiB[50KiB] Sc·[0.50]
+11:31:42.789842 memdb@flush committed F·1 T·24.9903ms
+11:31:42.790356 journal@remove removed @3
+11:31:42.790356 table@compaction range L-1 "a":"b"
+11:31:42.790356 table@compaction L0·2 -> L1·0 S·50KiB Q·632
+11:31:42.792422 table@build created L1@7 N·629 S·51KiB "\x02d\xfc..\x19Ba,v430":"\xfe\x88\xcf..H\xef\xcc,v363"
+11:31:42.792422 version@stat F·[0 1] S·51KiB[0B 51KiB] Sc·[0.00 0.00]
+11:31:42.815572 table@compaction committed F-1 S+298B Ke·0 D·2 T·25.2161ms
+11:31:42.815572 table@remove removed @6
+11:31:42.832247 table@compaction range L-1 "o":"p"
+19:23:00.530147 db@close closing
+19:23:00.533246 db@close done T·3.0992ms
+=============== May 13, 2021 (CEST) ===============
+20:58:02.175334 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:58:02.178943 version@stat F·[0 1] S·51KiB[0B 51KiB] Sc·[0.00 0.00]
+20:58:02.179465 db@open opening
+20:58:02.179465 journal@recovery F·1
+20:58:02.180489 journal@recovery recovering @5
+20:58:02.287875 memdb@flush created L0@8 N·51383 S·2MiB "\x15\x02|..\x1e\x05\xa4,v52007":"\xe7(=..m\xbb\x93,v52002"
+20:58:02.289957 version@stat F·[1 1] S·2MiB[2MiB 51KiB] Sc·[0.25 0.00]
+20:58:02.305214 db@janitor F·5 G·1
+20:58:02.305214 db@janitor removing table-2
+20:58:02.305214 db@open done T·125.7493ms
